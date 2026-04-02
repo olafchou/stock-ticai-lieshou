@@ -1,0 +1,7 @@
+interface:
+  display_name: "题材猎手"
+  short_description: "把新闻事件映射成A股题材与个股"
+  default_prompt: "Use $ticai-lieshou to find which A-share themes and stocks may react to this event, rumor, news item, or screenshot."
+
+policy:
+  allow_implicit_invocation: true
