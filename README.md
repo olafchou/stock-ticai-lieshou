@@ -36,9 +36,9 @@
 
 ## 安装方式
 
-### 方式 1：从 GitHub 安装到本地技能目录
+### 方式 1：通过 GitHub 安装
 
-适合你自己长期使用，或想在本地 agent 环境里直接调用。
+适合想手动安装、调试或二次修改的用户。
 
 1. 克隆仓库：
 
@@ -56,7 +56,41 @@ cp -R ./ticai-lieshou ~/.codex/skills/ticai-lieshou
 
 3. 重启你的 agent 环境，或重新加载 skills。
 
-4. 用下面这类意图触发：
+4. 如果你使用的是龙虾 / OpenClaw，也可以不手动复制目录，而是在技能管理页面直接导入下面这个目录或 zip：
+
+```text
+ticai-lieshou/
+```
+
+或
+
+```text
+ticai-lieshou-1.0.0.zip
+```
+
+### 方式 2：通过 SkillHub 安装
+
+`题材猎手` 已经上传到 SkillHub 并通过审核。
+
+安装时直接在 SkillHub 搜索：
+
+```text
+题材猎手
+```
+
+或使用 slug：
+
+```text
+ticai-lieshou
+```
+
+找到后直接点击安装或添加到技能列表即可。
+
+如果你在龙虾 / OpenClaw 里通过 SkillHub 同步技能，安装后就可以直接使用。
+
+### 安装后怎么触发
+
+安装完成后，用这类意图触发：
 
 ```text
 这条新闻利好哪些A股
@@ -64,38 +98,6 @@ cp -R ./ticai-lieshou ~/.codex/skills/ticai-lieshou
 这个事件会炒哪些股票
 这张截图会带动哪些A股
 ```
-
-### 方式 2：上传到 SkillHub / ClawHub
-
-适合对外发布或跨设备分发。
-
-仓库里已经准备好可上传目录：
-
-```text
-ticai-lieshou/
-```
-
-也可以直接上传打好的 zip：
-
-```text
-ticai-lieshou-1.0.0.zip
-```
-
-SkillHub 建议填写：
-
-- `Slug`：`ticai-lieshou`
-- `显示名称`：`题材猎手`
-- `版本号`：`1.0.0`
-
-### 方式 3：只取单个 skill 目录使用
-
-如果你不想克隆整个仓库，也可以只拿下面这个目录：
-
-```text
-ticai-lieshou/
-```
-
-只要目录里保留 `SKILL.md` 即可被大多数 skill 平台识别。
 
 ## 主要文件
 
@@ -151,13 +153,3 @@ ticai-lieshou/
 - 发布平台适配元数据
 - 更多事件案例
 - 更强的“短线题材 / 中线逻辑”分层输出
-
-## 为什么仓库里现在有安装说明
-
-最开始这个仓库是按“先做 skill 本体，再发 GitHub 和平台”的顺序搭的，所以一开始更偏开发者视角。
-
-现在 README 已补齐常用安装路径，目标是让别人打开 GitHub 后，能立刻知道：
-
-- 怎么本地安装
-- 怎么上传平台
-- 怎么触发这个 skill
