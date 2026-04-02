@@ -121,10 +121,3 @@ cp -R ./stock-catalyst-hunter ~/.openclaw/skills/stock-catalyst-hunter
 ```text
 帮我看看这张图会影响哪些A股股票。
 ```
-
-## 设计原则
-
-- 不维护本地概念股数据库
-- 先搜索市场映射，再做推理判断
-- 少给废票，宁可少给也不乱凑名单
-- 输出重点是找方向和找票，不是做真假鉴定报告
