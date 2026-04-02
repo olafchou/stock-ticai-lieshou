@@ -28,7 +28,7 @@
 │   └── superpowers/
 │       ├── plans/
 │       └── specs/
-└── ticai-lieshou/
+└── stock-catalyst-hunter/
     ├── SKILL.md
     ├── agents/
     │   └── openai.yaml
@@ -39,7 +39,7 @@
 
 ### 方式 1：通过 SkillHub 安装
 
-[Stock Catalyst Hunter - SkillHub](https://skillhub.tencent.com/skills/ticai-lieshou)
+[Stock Catalyst Hunter - SkillHub](https://skillhub.tencent.com/skills/stock-catalyst-hunter)
 
 ### 方式 2：通过 GitHub 手动安装
 
@@ -50,7 +50,7 @@
 如果你的龙虾 / OpenClaw 支持让助手根据 GitHub 仓库安装 skill，可以直接发送：
 
 ```text
-https://github.com/olafchou/stock-ticai-lieshou 帮我安装一下这个skill
+https://github.com/olafchou/stock-catalyst-hunter 帮我安装一下这个skill
 ```
 
 这是最省事的 GitHub 安装方式。
@@ -69,15 +69,15 @@ https://github.com/olafchou/stock-ticai-lieshou 帮我安装一下这个skill
 1. 克隆仓库：
 
 ```bash
-git clone https://github.com/olafchou/stock-ticai-lieshou.git
-cd stock-ticai-lieshou
+git clone https://github.com/olafchou/stock-catalyst-hunter.git
+cd stock-catalyst-hunter
 ```
 
-2. 把 `ticai-lieshou/` 目录复制到你的 OpenClaw 技能目录，例如：
+2. 把 `stock-catalyst-hunter/` 目录复制到你的 OpenClaw 技能目录，例如：
 
 ```bash
 mkdir -p ~/.openclaw/skills
-cp -R ./ticai-lieshou ~/.openclaw/skills/ticai-lieshou
+cp -R ./stock-catalyst-hunter ~/.openclaw/skills/stock-catalyst-hunter
 ```
 
 3. 重新启动会话，或重新加载 skills，让新技能出现在当前环境里。
@@ -95,11 +95,11 @@ cp -R ./ticai-lieshou ~/.openclaw/skills/ticai-lieshou
 
 ## 主要文件
 
-- `ticai-lieshou/SKILL.md`
+- `stock-catalyst-hunter/SKILL.md`
   - skill 主说明，定义触发意图、工作流、输出格式和约束
-- `ticai-lieshou/agents/openai.yaml`
+- `stock-catalyst-hunter/agents/openai.yaml`
   - UI 元数据和默认提示
-- `ticai-lieshou/examples.md`
+- `stock-catalyst-hunter/examples.md`
   - 更适合 GitHub 浏览的示例输入输出
 
 ## 推荐触发意图
@@ -135,7 +135,7 @@ cp -R ./ticai-lieshou ~/.openclaw/skills/ticai-lieshou
 
 ## 当前状态
 
-当前版本：`1.1.0`
+当前版本：`1.0.3`
 
 这一版已经包含：
 

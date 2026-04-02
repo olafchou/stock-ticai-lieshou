@@ -1,4 +1,4 @@
-# 题材猎手 Design
+# Stock Catalyst Hunter Design
 
 ## Goal
 
